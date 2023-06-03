@@ -1,0 +1,55 @@
+/* variables */
+$drkbg: #1f2d3d;
+$drkbgpry: #253649;
+$drkwhite: #ffffff;
+
+/* darkmode */
+body.dark-mode {
+        background-color: $drkbg;
+        color: #ffffff;
+}
+
+.dark-mode {
+  a {
+    text-decoration: none;
+  }
+ .dashboard_md .img_sm {
+    border: 8px solid #1f2d3d;
+  }
+  .bt_grp-dl button#dark-mode-button{
+    background-color: #f7b928;
+    color: #ffffff;
+  }
+  .bt_grp-dl button#light-mode-button{
+    background-color: buttonface;
+    color: buttontext;
+  }
+      .br_nv {
+        background-color: $drkbgpry;
+        color: #ffffff;
+      }
+      footer {
+        background-color: $drkbgpry;
+        color: #d2d2d2;
+      }
+      footer .br_HR {
+        height: 1px;
+        background-color: #999999;
+      }
+      footer a {
+        color: #d7d7d7;
+      }
+      .br_mi > svg{
+        cursor: pointer;
+        fill: $drkwhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .br_mis {
+        background-color: #1f2d3d;
+      }
+      .br_mis li a{
+        color: $drkwhite;
+      }
+}

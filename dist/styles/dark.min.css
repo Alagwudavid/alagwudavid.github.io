@@ -1,0 +1,39 @@
+/* variables */
+/* darkmode */
+body.dark-mode {
+  background-color: #1f2d3d;
+  color: #ffffff; }
+
+.dark-mode a {
+  text-decoration: none; }
+.dark-mode .dashboard_md .img_sm {
+  border: 8px solid #1f2d3d; }
+.dark-mode .bt_grp-dl button#dark-mode-button {
+  background-color: #f7b928;
+  color: #ffffff; }
+.dark-mode .bt_grp-dl button#light-mode-button {
+  background-color: buttonface;
+  color: buttontext; }
+.dark-mode .br_nv {
+  background-color: #253649;
+  color: #ffffff; }
+.dark-mode footer {
+  background-color: #253649;
+  color: #d2d2d2; }
+.dark-mode footer .br_HR {
+  height: 1px;
+  background-color: #999999; }
+.dark-mode footer a {
+  color: #d7d7d7; }
+.dark-mode .br_mi > svg {
+  cursor: pointer;
+  fill: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+.dark-mode .br_mis {
+  background-color: #1f2d3d; }
+.dark-mode .br_mis li a {
+  color: #ffffff; }
+
+/*# sourceMappingURL=dark.min.css.map */
