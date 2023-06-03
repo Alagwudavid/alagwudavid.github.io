@@ -11,8 +11,9 @@ You can organize the files in your repository using the following structure:
 - **Branches**: braches from author.
   - **main**: Contains the main source code files.
     - `index.html`: The main html page.
-    - `utils.py`: Utility functions used by the main script.
-  - **master**: Contains the test files.
+    - `main.min.css`: minified & compiled scss styles.
+    - `dist`: contains source files.
+  - **master**: Contains the test versions files for throwback.
 - **docs**: Contains the project documentation.
   - `README.md`: Project documentation.
 <!-- - **data**: Contains the data files.
