@@ -1,7 +1,9 @@
 # alagwudavid.github.io
 my portfolio website free to use
 
-:octocat:	This site was built using [Alagwu David](https://alagwudavid.github.io/).
+:octocat: This site was built using [GitHub Pages](https://alagwudavid.github.io/).
+
+:trollface: [Alagwu David](https://alagwudavid.github.io/).
 
 The background color is `#FFFFFF` for light mode and `#1F2D3D` for dark mode.
 > using `.scss` for dark mode and nested formations
