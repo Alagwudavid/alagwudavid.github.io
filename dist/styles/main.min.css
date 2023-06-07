@@ -2,7 +2,8 @@
   margin: 0px;
   padding: 0px;
   border: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: block; }
 
 a {
   text-decoration: none; }
@@ -18,6 +19,22 @@ body {
   padding: 0;
   font-family: Arial, sans-serif; }
 
+.seperator {
+  background-color: #ddd;
+  height: 1px;
+  width: 100%;
+  margin: 8px 0; }
+
+.fl-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.heading-md {
+  font-size: 14px;
+  font-weight: 700; }
+
 /** for _reset.scss: css reset file **/
 /** for _variables.scss: css variables file **/
 /* variables */
@@ -30,12 +47,6 @@ body.dark-mode {
   text-decoration: none; }
 .dark-mode .dashboard_md .img_sm {
   border: 8px solid #1f2d3d; }
-.dark-mode .bt_grp-dl button#dark-mode-button {
-  background-color: #f7b928;
-  color: #ffffff; }
-.dark-mode .bt_grp-dl button#light-mode-button {
-  background-color: buttonface;
-  color: buttontext; }
 .dark-mode .br_nv {
   background-color: #253649;
   color: #ffffff; }
@@ -59,12 +70,11 @@ body.dark-mode {
   color: #ffffff; }
 
 /** for _dark.scss: css darkmode file **/
-/*
-NAVBAR
-*/
+/* NAVBAR */
 .br_nv {
   background-color: #f8f9fa;
-  color: #666666; }
+  color: #666666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
   .br_nv .br_nvc {
     height: 54px;
     max-width: 1188px;
@@ -80,12 +90,12 @@ NAVBAR
     display: flex;
     align-items: center;
     justify-content: center; }
-  .br_nv .br_ifm > svg {
-    fill: #dddddd; }
-  .br_nv .br_ifm:hover {
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: #1f2d3d; }
+    .br_nv .br_ifm .br_nv .br_ifm svg {
+      fill: #dddddd; }
+    .br_nv .br_ifm:hover {
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #1f2d3d; }
   .br_nv .br_ifc {
     display: none;
     position: absolute;
@@ -95,7 +105,6 @@ NAVBAR
     height: 400px;
     border-radius: 8px;
     overflow: hidden;
-    padding: 5px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 2; }
@@ -120,19 +129,19 @@ NAVBAR
     align-items: center;
     justify-content: center;
     gap: 15px; }
-  .br_nv .br_col .br_nm {
-    font-size: 24px;
-    font-family: 'Righteous', cursive;
-    text-decoration: none;
-    color: #0095f6; }
+    .br_nv .br_col .br_nm {
+      font-size: 24px;
+      font-family: 'Righteous', cursive;
+      text-decoration: none;
+      color: #0095f6; }
   .br_nv .br_uSm {
     display: flex;
     align-items: center; }
-  .br_nv .br_uSm img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffffff; }
+    .br_nv .br_uSm img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ffffff; }
 
 /*
 MAIN
@@ -161,48 +170,49 @@ main {
     position: relative;
     margin: 20px 0px;
     margin-bottom: 10px;
-    border-radius: 8px; }
-  main .dashboard_md .img_sm {
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -50px;
-    border: 8px solid #ffffff; }
-  main .dashboard_md .dsmd_btfx {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: initial;
-    bottom: 10px;
-    left: 10px;
-    padding-left: 150px;
-    padding-right: 25px;
-    width: 100%; }
-  main .dashboard_md .dsmd_btfx .uname {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: flex-end; }
-  main .dashboard_md .dsmd_btfx .uname:hover {
-    text-decoration: dotted underline; }
-  main .dashboard_md .dsmd_btfx ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px; }
-  main .dashboard_md .dsmd_btfx ul li {
-    background-color: #0095f6;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    cursor: pointer; }
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+    main .dashboard_md .img_sm {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -50px;
+      border: 8px solid #ffffff; }
+    main .dashboard_md .dsmd_btfx {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: initial;
+      bottom: 10px;
+      left: 10px;
+      padding-left: 150px;
+      padding-right: 25px;
+      width: 100%; }
+    main .dashboard_md .dsmd_btfx .uname {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: flex-end; }
+    main .dashboard_md .dsmd_btfx .uname:hover {
+      text-decoration: dotted underline; }
+    main .dashboard_md .dsmd_btfx ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px; }
+    main .dashboard_md .dsmd_btfx ul li {
+      background-color: #0095f6;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      cursor: pointer; }
   main .bt_grp-dl {
     display: flex;
     flex-direction: row;
@@ -215,9 +225,33 @@ main {
     display: flex;
     justify-content: center;
     gap: 6px; }
-  main .bt_grp-dl button#light-mode-button {
-    background-color: #f7b928;
-    color: #ffffff; }
+    main .bt_grp-dl button:hover {
+      background-color: #f7b928; }
+    main .bt_grp-dl button.activeBtn {
+      background-color: #f7b928;
+      color: #ffffff; }
+  main .cont-md {
+    background-color: #f8f9fa;
+    max-width: 1188px;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+    main .cont-md .container {
+      color: #5c5c5c; }
+      main .cont-md .container .heading-md {
+        gap: 5px; }
+      main .cont-md .container ul {
+        font-size: 14px; }
+        main .cont-md .container ul li {
+          padding: 4px 6px;
+          border-radius: 6px;
+          background-color: #0095f6;
+          margin: 5px;
+          color: #f8f9fa; }
 
 /*
 FOOTER
@@ -255,6 +289,11 @@ footer {
     flex-direction: row;
     gap: 15px;
     list-style: none; }
+    footer .br_ft_btm .ul_ftTp2 li a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
   footer .br_ft_btm .ul_ftTp3 {
     display: flex;
     flex-direction: row;

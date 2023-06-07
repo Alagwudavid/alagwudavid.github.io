@@ -17,7 +17,7 @@ overlay.addEventListener('click', () => {
   );
 
 
-  const darkModeButton = document.getElementById('dark-mode-button');
+const darkModeButton = document.getElementById('dark-mode-button');
 const lightModeButton = document.getElementById('light-mode-button');
 const body = document.body;
 
@@ -40,9 +40,13 @@ lightModeButton.addEventListener('click', () => {
 function enableDarkMode() {
   body.classList.add('dark-mode');
   localStorage.setItem('darkMode', 'true');
+  darkModeButton.classList.toggle('activeBtn');
+  lightModeButton.classList.remove('activeBtn');
 }
 
 function disableDarkMode() {
   body.classList.remove('dark-mode');
+  lightModeButton.classList.toggle('activeBtn');
+  darkModeButton.classList.remove('activeBtn');
   localStorage.setItem('darkMode', 'false');
 }

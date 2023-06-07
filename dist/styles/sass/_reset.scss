@@ -3,6 +3,7 @@
     padding: 0px;
     border: none;
     box-sizing: border-box;
+    display:block;
   }
 
   a {
@@ -19,4 +20,21 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+  }
+
+  .seperator {
+    background-color: #ddd;
+    height: 1px;
+    width:100%;
+    margin: 8px 0;
+  }
+  .fl-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .heading-md{
+    font-size: 14px;
+    font-weight: 700;
   }
